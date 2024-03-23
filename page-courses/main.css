@@ -294,6 +294,10 @@ input::placeholder{
     margin-bottom: 20px;
 }
 
+.phone-number-btn{
+    max-width: 250px;
+}
+
 .phone-number-btn:hover .phone-number{
     color: #000000;
     transition: all 0.3s ease;
