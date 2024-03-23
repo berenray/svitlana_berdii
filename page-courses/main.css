@@ -1,0 +1,316 @@
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: linear-gradient(#939393, #000000, #939393);
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*START MENU*/
+
+.menu{
+    margin-top: 21px;
+    width: 100%;
+    height: 60px;
+    background-color: #5B5A5A;
+    position: relative;
+}
+
+.text-first{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+    color:#fff;
+    margin-top: 16px;
+    left: 100px;
+    position: absolute;
+}
+
+.menu--list{
+    white-space: nowrap;
+}
+
+.menu-text__list{
+    position: absolute;
+    right: 100px;
+}
+
+.menu-text__list--textion{
+    display: inline;
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.menu-text__list--textion_button{
+    color: #fff;
+}
+
+.menu-text__list--textion_button:hover{
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu-text__list--textion:last-child{
+    margin-right: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+/*END MENU*/
+
+.first-text{
+    text-align: center;
+    margin: 100px auto;
+    text-transform: uppercase;
+    font-family: 'Itim', cursive;
+    color: #fff;
+    font-size: 50px;
+}
+
+.courses-content{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+}
+
+.text{
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Itim', cursive;;
+    margin-right: 20px;
+}
+
+.img-courses_1{
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+    margin-bottom: 200px;
+}
+
+.paragraph{
+    margin-left: 30px
+}
+
+.text_second{
+    margin-left: 20px;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.text-list_content{
+    margin-top: 10px;
+}
+
+.buy{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.buy-btn{
+    text-decoration: none;
+}
+
+.buy-btn-text{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Itim', cursive;
+    color: #fff;
+    background-color:#000000;
+    padding: 15px 25px;
+    border-radius: 20px;
+    margin-bottom: 200px;
+    background-image: linear-gradient(to right, #fff , #fff);
+    background-repeat: no-repeat; 
+    background-size: 0 100%; 
+    transition: 0.3s; 
+}
+
+.buy-btn-text:hover{
+    color: #000000;
+    background-size: 100% 100%; 
+}
+
+/*
+    Старт майл
+*/
+
+#contacts-container{
+    background-image: url('./content/contacts/mail.png');
+    height: 800px;
+    background-size: cover;
+}
+
+.backg-contacts{
+    margin-top: -20px;
+    display: flex;
+}
+
+.text-contacts{
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #FFF;
+    font-family: 'Itim', cursive;
+    margin-left: 100px;
+    margin-top: 100px;
+    height: 200px;
+}
+
+.contacts{
+    display: flex;
+    margin: 0 auto;
+}
+
+.text-contacts__second{
+    margin-left: 100px;
+}
+
+.uniForm{
+    margin-left: -400px;
+    margin-top: 400px;
+    position: relative;
+}
+
+input{
+    margin-left: -300px;
+    margin-top: 100px;
+    background: transparent ;
+    border: none;
+    border-bottom: 5px solid #fff;
+    height: 70px;
+    width: 700px;
+    padding: 0px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+}
+
+input:focus::placeholder{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+}
+
+input:focus{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    transition: all 0.3s ease;
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    transition: all 0.3s ease;
+}
+
+.submit_but{
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: none;
+    width: 130px;
+    height: 40px;
+    margin-left: -15px;
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+}
+
+.submit_but:hover{
+    background: #000000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/*
+    Конец майл
+*/
+
+/*
+Начало контакты 
+*/
+
+.first-text_contacts{
+    color: #fff;
+    margin: 100px auto;
+}
+
+.contacts-information{
+    margin: 0 auto;
+}
+
+.contacts-information_sections{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Размещаем содержимое по горизонтали по центру */
+    align-items: center;
+}
+
+.phone{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.phone-text{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.phone-number{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.phone-number_ukr{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.phone-number-btn:hover .phone-number{
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.address-text{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.address-content{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.address-btn:hover .address-content{
+    color: #000000;
+    transition: all 0.3s ease;
+}
