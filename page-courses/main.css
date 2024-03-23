@@ -136,7 +136,7 @@ ul{
     text-transform: uppercase;
     font-family: 'Itim', cursive;
     color: #fff;
-    background-color:#000000;
+    background-color: #5B5A5A ;
     padding: 15px 25px;
     border-radius: 20px;
     margin-bottom: 200px;
@@ -259,6 +259,7 @@ input::placeholder{
 
 .contacts-information{
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .contacts-information_sections{
@@ -313,4 +314,75 @@ input::placeholder{
 .address-btn:hover .address-content{
     color: #000000;
     transition: all 0.3s ease;
+}
+
+#instagram-btn .instagram-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#instagram-btn:hover .instagram-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.instagram-txt{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+}
+
+.contacts-information_second_section{
+    margin-left: 40px;
+}
+
+.social_media{
+    display: flex; /* Размещение элементов в линию */
+    justify-content: center; /* Выравнивание элементов по центру по горизонтали */
+    align-items: center; 
+}
+
+.telegram{
+    margin-left: 20px;
+}
+
+#telegram-btn .telegram-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#telegram-btn:hover .telegram-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.whatsapp{
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.whatsapp-img{
+    height: 70px;
+    width: 70px;
+}
+
+#whatsapp-btn .whatsapp-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#whatsapp-btn:hover .whatsapp-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+#youtube-btn .youtube-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#youtube-btn:hover .youtube-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.youtube{
+    margin-left: 20px;
+}
+
+.youtube-img{
+    height: 60px;
+    width: 70px;
 }
