@@ -102,14 +102,14 @@ ul{
 
 .first-color{
     background: linear-gradient(90deg, #F50104,#F50104, #FFF407, #FFF407);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .second-color{
     margin-left: 20px;
     background: linear-gradient(90deg,#FFF407, #30DD0C);
-      -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
