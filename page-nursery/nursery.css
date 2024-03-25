@@ -125,6 +125,12 @@ ul{
 
 .nursery-img{
     border-radius: 20px;
+    margin-right: 20px;
+}
+
+.nursery-img-second{
+    margin-left: 20px;
+    margin-top: 60px;
 }
 
 .text{
@@ -133,6 +139,7 @@ ul{
     color: #fff;
     margin-right: 20px;
     align-items: center;
+    margin-left: 20px;
 }
 
 .text_nursery_first{
@@ -145,8 +152,7 @@ ul{
 
 .text_nursery_second{
     font-size: 38px;
-    margin-right: 0px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .img_second{
