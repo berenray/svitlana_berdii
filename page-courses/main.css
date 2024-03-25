@@ -98,6 +98,7 @@ ul{
     color: #fff;
     font-family: 'Itim', cursive;;
     margin-right: 20px;
+    margin-left: 20px
 }
 
 .img-courses_1{
@@ -105,6 +106,12 @@ ul{
     height: 700px;
     border-radius: 20px;
     margin-bottom: 200px;
+    margin-right: 20px; 
+    margin-top: 20px;
+}
+
+.img-courses_2{
+    margin-left: 20px;
 }
 
 .paragraph{
@@ -242,6 +249,10 @@ input::placeholder{
     background: #000000;
     color: #fff;
     transition: all 0.3s ease;
+}
+
+.paragraph-buy{
+    margin-left: 60px;
 }
 
 /*
