@@ -1,380 +1,66 @@
-
-@media (max-width: 1024px) {
-    .first-container{
-        width: 1440px;
-    }
-    .text-name{
-        margin-left: 100px;
-        margin-top: 5px;
-        margin-right: 100px;
-    }
-
-    .text-first{
-        font-size: 2.5rem;
-    }
-
-    .menu{
-        height: 100px;
-    }
-    .menu-text__list--textion_button{
-        font-size: 2.5rem;
-    }
-    .menu--list{
-        margin-top: 5px;
-    }
-    .photo__me-firstx{
-        height: 400px;
-        width: 400px;
-        margin-top: -60px;
-        margin-left: -70px;
-    }
-    .text-me{
-        height: 500px;
-        margin-left: 50px;
-        margin-top: 100px;
-        width: 900px;
-    }
-    .text-me__desc{
-        font-size: 58px;
-    }
-    .text-realistes_content{
-        margin-top: -30px;
-        margin-left: 440px;
-        z-index: 2;
-        font-size: 40px;
-    }
-    .hey{
-        font-size: 150px;
-        margin-top: -150px;
-        margin-left: 10px;
-    }
-    .text-abot__me{
-        font-size: 55px;
-        margin-left: 60px;
-        margin-top: 230px;
-    }
-    .container-about__me{
-        height: 1350px;
-    }
-    .slider__photo{
-        margin-right: 360px;
-        margin-top: 100px;
-    }
-    .photo-slider{
-        height: 700px;
-    }
-    .clasik{
-        width: 700px;
-        margin-top: 50px;
-        margin-left: 50px;
-        font-size: 65px;
-    }
-    .text-my_projects{
-        font-size: 100px;
-        margin-left: 200px;
-        margin-top: 70px;
-        width: 800px;
-    }
-    .content-my-projects{
-        margin-top: 100px;
-        margin-left: 200px;
-        width: 900px;
-    }
-    .container-projects{
-        margin-top: 400px;
-        margin-left: -900px;
-    }
-    .filter__link{
-        height: 80px;
-        width: 350px;
-        font-size: 50px;
-    }
-    .filter:first-child{
-        margin-left: -30px;
-    }
-    .filter{
-        padding-right: 300px;
-    }
-    .my-projects{
-        width: 1400px;
-        margin-left: -115px;
-    }
-    .projects{
-        width: 1300px;
-    }
-    .container-projects{
-        width: 1300px;
-    }
-    .projects-montesori{
-        width: 600px;
-        height: 900px;
-    }
-    .project-desc__text-first{
-        margin-bottom: 10px;
-        font-size: 70px;
-    }
-    .project-desc{
-        height: 450px;
-        font-size: 40px;
-    }
-    .project-desc__button{
-        margin-top: 30px;
-        font-size: 50px;
-    }
-    .project-desc__text-trips{
-        font-size: 50px;
-    }
-    .project-desc-trips{
-        height: 560px;
-    }
-    .project-desc__text-camps{
-        font-size: 50px;
-    }
-    .project-desc-camps{
-        height: 500px;
-    }
-    .project-desc-certificate{
-        height: 560px;
-    }
-    .project-desc__text-certificate{
-        font-size: 50px;
-    }
-    .project-desc__text_for-everyone{
-        font-size: 45px;
-    }
-    .project-desc-novels{
-        height: 400px;
-    }
-    .project-desc__text_books{
-        font-size: 48px;
-    }
-    .project-desc-books{
-        height: 380px;
-    }
-    .backgr{
-        height: 60rem;
-    }
-    .contacts-information__text{
-        font-size: 7rem;
-    }
-    .my-information{
-        font-size: 4rem;
-        margin-top: 100px;
-    }
-    .img-inst{
-        
-    }
-    .contacts-btn{
-        margin-right: 530px;
-        font-size: 5rem;
-        margin-top: -400px;
-    }
-    .telefon-text{
-        margin-left: 60px;
-        font-size: 6rem;
-    }
-    .ukraine{
-        margin-left: -460px;
-        margin-top: 80px;
-    }
-    .telefon{
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    .montessori-address{
-        font-size: 5rem;
-        margin-left: 60px;
-    }
-    .address-text{
-        margin-top: 20px;
-        margin-left: -350px;
-        width: 700px;
-    }
-    .contacts-btn_telegram{
-        margin-top: -290px;
-    }
-    .contacts-btn_whatsapp{
-        margin-top: -180px;
-    }
-    .contacts-btn_youtube{
-        margin-top: -70px;
-    }
-}
-@media(min-width: 1024px){
-    .menu--list{
-        padding-left: 485px;
-    }
-    .text-name{
-        margin-left: 163px;
-    }
-    .menu{
-    height: 56px;
-    }   
-    .text-me{
-        margin-left: 170px ;
-        margin-top: 173px;
-        width: 712px;
-        height: 327px;
-    }
-    .text-me__desc{
-        font-size: 40px;
-    }
-    .text-realistes_content{
-        margin-left: 400px;
-        font-size: 30px;
-    }
-    .hey{
-        margin-top: -70px;
-    }
-    .text-abot__me{
-        font-size: 40px;
-        margin-left: 100px;
-        margin-top: 230px;
-    }
-    .container-about__me{
-        height: 1000px;
-    }
-    .slider__photo{
-        margin-right: 350px;
-    }
-    .clasik{
-        width: 450px;
-    }
-    .text-my_projects{
-        font-size: 40px;
-        margin-left: 580px;
-        margin-top: 70px;
-        width: 400px;
-    }
-    .container-projects{
-        margin-top: 200px;
-        margin-left: -760px;
-    }
-    .filter__link{
-        height: 60px;
-        width: 240px;
-        font-size: 30px;
-    }
-    .filter{
-        margin-left: -15px;
-    }
-    .project-desc__text-first{
-        margin-bottom: 10px;
-        font-size: 50px;
-    }
-    .project-desc{
-        font-size: 29px;
-    }
-    .project-desc__button{
-        margin-top: 20px;
-        font-size: 40px;
-    }  
-    .project-desc__text-trips{
-        font-size: 34px;
-    }
-    .my-projects{
-        margin-left: -130px;
-    }
-    .project-desc__text_for-everyone{
-        font-size: 36px;
-    }
-    .project-desc__text_books{
-        font-size: 32px;
-    }
-    .my-information{
-        font-size: 30px;
-        margin-top: 130px;
-        margin-left: 350px;
-    }
-    .contacts-btn{
-        margin-right: 550px;
-        font-size: 40px;
-        margin-top: -200px;
-    }
-    .telefon-text{
-        font-size: 40px;
-    }
-    .ukraine{
-        margin-left: -188px;
-        margin-top: 30px;
-    }
-    .montessori-address{
-        font-size: 40px;
-    }
-    .contacts-btn_telegram{
-        margin-top: -120px;
-    }
-    .contacts-btn_whatsapp{
-        margin-top: -30px;
-    }
-    .contacts-btn_youtube{
-        margin-top: 20px;
-    }
-}
-
-
-/* 
-
-    Старт меню 
-
-*/
-
-
-body{
-    width: 1440px;
-}
-
 html{
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
-.img-moun{
-    width: 1440px;
-    height: 800px;
+body{
+    background: linear-gradient(#939393, #000000, #939393);
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .container{
-    margin-bottom: -5px;
+    margin: 0 auto;
+    width: 100%;
 }
+
+.backg{
+    background: url('./content/Дизайн\ без\ назви.png');
+    width: 100%;
+    height: 1000px;
+}
+
+/*START MENU*/
 
 .menu{
     margin-top: 21px;
-    position: absolute;
-    width: 1440px;
+    width: 100%;
+    height: 60px;
     background-color: #5B5A5A;
-}
-
-.menu-text{
-    display: flex;
     position: relative;
-    width: 1440px;
 }
 
-.text-name{
-    color: #fff;
-    min-width: 151px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.text-first{
+    text-transform: uppercase;
+    font-size: 25px;
     font-family: 'Itim', cursive;
-    font-size: 19px;
+    color:#fff;
+    margin-top: 16px;
+    left: 100px;
+    position: absolute;
 }
 
-ul{
-    list-style: none;
+.menu--list{
+    white-space: nowrap;
+}
+
+.menu-text__list{
+    position: absolute;
+    right: 100px;
 }
 
 .menu-text__list--textion{
-    text-transform: uppercase;
-    font-family: 'Itim', cursive;
-    font-size: 19px;
-    margin-right: 20px;
     display: inline;
-    
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-align: right;
 }
 
 .menu-text__list--textion_button{
-    text-decoration: none;
     color: #fff;
 }
 
@@ -383,477 +69,64 @@ ul{
     transition: all 0.3s ease;
 }
 
+a{
+    text-decoration: none;
+}
+
 .menu-text__list--textion:last-child{
     margin-right: 0px;
 }
 
-/* 
-
-    Конец меню 
-
-*/
-
-.photo__me-firstx{
-    border-radius: 50%;
+ul{
+    list-style: none;
 }
 
-.photo__me{
-    margin-top: 205px;
-    margin-left: 100px;
-}
+/*END MENU*/
 
-.hey{
-    margin-bottom: 0px;
-}
-
-.clasik{
+.start-page{
+    margin: 0 auto;
     text-align: center;
-}
-
-
-.more__about{
-    width: 450px;
-    margin-top: 20px;
-}
-
-.more__about-button{
-    color: grey;
-    text-decoration: none;
-}
-
-.clasik:hover{
-    background-color: #fff;
-    border-radius: 10px;
-    background-color: #fff;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: all 0.3s ease;
-}
-
-.descr-me{
     display: flex;
 }
 
-.text-realistes_content{
-    font-family: 'Italianno', cursive;
-    color: #fff;
+.first-section{
+    margin: 0 auto;
 }
 
-.text-me{
-    position: relative;
-    border: 10px solid #0000007a;
-    border-radius: 20px;
-    background-color: #0000007a;
-}
-
-.text-me__desc{
-    margin-top: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
-    color: #fff;
-    font-family: 'Itim', cursive;
-    margin-bottom: -30px;
-}
-
-.container-about__me{
-    width: 1440px;
-    background: linear-gradient(#5B5A5A, #000000);
-    display: flex;
-}
-
-.text-abot__me{
-    color: #fff;
-    font-family: 'Itim', cursive;
-}
-
-.fade-slider{
-    margin-top: 230px;
-    margin-right: 170px;
-}
-
-.photo-slider{
-    position: absolute;
-    border-radius: 20px;
-}
-
-.fade-slider__item{
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-.fade-slider__item-active{
-    opacity: 1;
-}
-
-.container-portfolio{
-    padding-bottom: 300px;
-    width: 1440px;
-    height: 100%;
-    display: flex;
-    background: linear-gradient(#000000, #5B5A5A, #939393);
-}
-
-.text-my_projects{
-    color: #fff;
-    font-family: 'Itim', cursive;
-    text-transform: uppercase;
-}
-
-.filter{
-    padding-left: 0px;
-    display: flex;
-}
-
-.filter__item{
-    margin-right: 130px;
-}
-
-.filter__link{
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000000;
-    font-family: 'Itim', cursive;
-}
-
-.filter__link:hover{
-    color: #fff;
-    background-color: #5B5A5A;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: all 0.3s ease;
-}
-
-.filter__link--active{
-    border-radius: 10px;
-    color: #fff;
-    background-color: #5B5A5A;
-}
-
-.projects-list{
-    display: flex;
-}
-
-.projects-text__desc{
-    position: relative;
-}
-
-.projects-montesori{
-    border-radius: 10px;
-}
-
-.projects{
-    margin-top: 100px;
-}
-
-.projects-montesori{
-    display: block;
-}
-
-.projects-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden  ;
-    position: relative;
-    height: 100%;
-}
-
-.project-desc__button{
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    color: #fff;
-    font-family: 'Itim', cursive;
-    padding: 5px 40px;
-    border-radius: 10px;
-    background-color: #000000;
-    background-image: linear-gradient(to right, #fff , #fff);
-    background-repeat: no-repeat; 
-    background-size: 0 100%; 
-    transition: 0.3s; 
-}
-
-.project-desc__button:hover{
-    color: #000000;
-    background-size: 100% 100%; 
-}
-
-.projects-item{
-    margin-left: 70px;
-}
-
-.projects-item:hover .project-desc{
-    transform: translateY(0%);
-    
-}
-
-
-.project-desc{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 30px 23px;
-    background-color: rgba(35, 35, 35, .8);
-    color: #fff;
-    font-family: 'Itim', cursive;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    transform: translateY(100%);
-    transition: transform .3s;
-}
-
-.project-desc__text{
-    text-align: center;
-}
-
-.my-projects{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.center-block{
-    margin-top: 70px;
-    margin-left: 270px;
-}
-
-.project-desc__text-first{
-    color: #fff;
-    font-family: 'Itim', cursive;
-    text-transform: uppercase;
-}
-
-.center-block{
-    position: absolute;
-    margin-left: 230px;
-}
-
-/*
-
-Контакты
-
-*/
-
-.contact-backg{
-    width: 1440px;
-}
-
-.backg{
-    margin-top: -20px;
-    display: flex;
-    position: absolute;
-}
-
-.text-contacts{
-    text-transform: uppercase;
-    font-size: 80px;
-    color: #FFF;
-    font-family: 'Itim', cursive;
-    position: relative;
-    margin-left: 100px;
+.img{
     margin-top: 200px;
 }
 
-.contacts{
-    display: flex;
-    margin-bottom: 280px;
+.logo{
+    border-radius: 50%;
 }
 
-.text-contacts__second{
-    margin-left: 100px;
+.second-section{
+    margin: 0 auto;
 }
 
-.uniForm{
-    margin-left: -400px;
-    margin-top: 500px;
-    position: relative;
+.text-second-section{
+    margin-top: 200px;
+    width: 650px;
+    background-color: #00000078;
+    border-radius: 20px;
+    border: 10px solid #000000c1;
 }
 
-input{
-    margin-left: -300px;
-    margin-top: 100px;
-    background: transparent ;
-    border: none;
-    border-bottom: 5px solid #fff;
-    height: 70px;
-    width: 700px;
-    padding: 0px;
-    font-size: 30px;
-    color: #fff;
+.text{
+    font-size: 35px;
     font-family: 'Itim', cursive;
+    color:#fff;
 }
 
-input:focus::placeholder{
-    font-size: 30px;
-    color: #fff;
-    font-family: 'Itim', cursive;
+.text_about-me{
+    padding: 20px 20px 0px 20px;
 }
 
-input:focus{
-    font-size: 30px;
-    color: #fff;
-    font-family: 'Itim', cursive;
-    transition: all 0.3s ease;
-}
-
-input::placeholder{
-    text-align: center;
-    font-size: 60px;
-    color: #fff;
-    font-family: 'Itim', cursive;
-    transition: all 0.3s ease;
-}
-
-.submit_but{
-    margin-top: 20px;
-    background: #fff;
-    border-radius: 10px;
-    border: none;
-    width: 130px;
-    height: 40px;
-    margin-left: -15px;
-    font-family: 'Itim', cursive;
+.text-about-desc{
     font-size: 25px;
+    color:#fff;
+    font-family: 'Italianno', cursive;
+    margin-right: -260px;
 }
 
-.submit_but:hover{
-    background: #000000;
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
-
-
-.backgr{
-    background-color: #939393;
-    width: 1440px;
-    min-height: 600px;
-    position: absolute;
-}
-
-.contacts-btn{
-    float: right;
-    position: relative;
-    display: flex;
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Itim', cursive;
-    background-image: url('./content/contacts/inst.png');
-    width: 60px;
-}
-
-
-.img-inst{
-    position: relative;
-    height: 60px;
-    width: 60px;
-
-}
-
-.contacts-btn:hover{
-    background-image: url('./content/contacts/inst\ hover.png');
-    transition: all 0.3s ease;
-}
-
-.text-inst{
-    margin-top: 5px;
-    padding-left: 70px;
-}
-
-.contacts-btn:hover{
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
-.contacts-information__text{
-    text-transform: uppercase;
-    margin-top: 40px;
-    color: #000000;
-    text-align: center;
-    font-family: 'Itim', cursive;
-}
-
-.my-information{
-    color: #000000;
-    font-family: 'Itim', cursive;
-   display: flex;
-}
-
-.my-information_address{
-    margin-top: 20px;
-}
-
-.contacts-btn_telegram{
-    width: 68px;
-    height: 68px;
-    background-image: url('./content/contacts/telegram.png');
-}
-
-.contacts-btn_telegram:hover{
-    background-image: url('./content/contacts/telegram\ hover\ .png');
-}
-
-.contacts-btn_whatsapp{
-    background-image: url('./content/contacts/whatsapp.png');
-}
-
-.contacts-btn_whatsapp:hover{
-    background-image: url('./content/contacts/whatsapp\ hiver.png');
-}
-
-.contacts-btn_youtube{
-    width: 60px;
-    height: 50px;
-    margin-left: 600px;
-    background-image: url('./content/contacts/youtube.png');
-}
-
-.contacts-btn_youtube:hover{
-    background-image: url('./content/contacts/youtube\ hover.png');
-}
-
-.text-telegram{
-    padding-left: 75px;
-}
-.telefon{
-    text-decoration: none;
-    color: #000000;
-}
-
-.telefon:hover{
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
-.address{
-    margin-top: 5px;
-    margin-left: -335px;
-    text-decoration: none;
-    color: #000000;
-}
-
-.address:hover{
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
-.telefon-text{
-    margin-top: -7px;
-}
-
-
-/*
-
-Контакты конец
- 
-*/
