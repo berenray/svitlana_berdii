@@ -156,7 +156,7 @@ ul{
 .text-btn-read-more{
     text-align: center;
     width: 400px;
-    color: black;
+    color: #5B5A5A;
     transition: all 0.3s ease;
     border-radius: 10px;
 }
@@ -193,3 +193,427 @@ ul{
     opacity: 1;
 }
 
+.container-my_projects{
+    margin-top: 900px;
+}
+
+.content-projects{
+    justify-content: center;
+    align-items: center;
+}
+
+.first-text{
+    font-size: 60px;
+    text-transform: uppercase;
+    color:#fff;
+    font-family: 'Itim', cursive;
+    text-align: center;
+}
+.container-projects{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+}
+
+.filter{
+    margin-top: 50px;
+    display: flex;
+    margin: 100px;
+}
+
+.filter__item{
+    margin-right: 70px;
+}
+
+.filter__item:last-child{
+    margin-right: 0px;
+}
+
+.filter__link{
+    color:#000000;
+    font-family: 'Itim', cursive;
+    font-size: 35px;
+    text-transform: uppercase;
+    background-color:#fff; 
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #000000 , #000000);
+    background-repeat: no-repeat; 
+    background-size: 0 100%; 
+    transition: 0.3s; 
+}
+
+.filter__link:hover{
+    border-radius: 10px;
+    color: #fff;
+    background-size: 100% 100%; 
+}
+
+.my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    width: 840px;
+    margin-left: 100px;
+}
+
+.projects-item{
+    margin-right: 50px;
+    margin-left: -20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.img-my-projects{
+    border-radius: 20px;
+}
+
+.projects-item_first{
+    margin-left: 180px
+}
+
+.projects-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden  ;
+    position: relative;
+    height: 100%;
+}
+
+.project-desc__button{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    padding: 5px 40px;
+    border-radius: 5px;
+    background-color: #000000;
+    background-image: linear-gradient(to right, #fff , #fff);
+    background-repeat: no-repeat; 
+    background-size: 0 100%; 
+    transition: 0.3s; 
+}
+
+.project-desc__button:hover{
+    color: #000000;
+    background-size: 100% 100%; 
+}
+
+.projects-item:hover .project-desc{
+    transform: translateY(0%);
+
+}
+
+.project-desc__text-first{
+    color: #fff;
+    font-family: 'Itim', cursive;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+
+.project-desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 23px;
+    background-color: rgba(35, 35, 35, .8);
+    color: #fff;
+    font-family: 'Itim', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: translateY(100%);
+    transition: transform .3s;
+    height: 230px;
+}
+
+.project-desc__text{
+    text-align: center;
+    font-size: 28px;
+}
+
+.project-desc-first{
+    height: 290px;
+    width: 335px;
+}
+
+.project-desc__text-first_first{
+    font-size: 45px;
+}
+
+.project-desc__text-second{
+    font-size: 30px;
+}
+
+.project-desc-second{
+    height: 290px;
+}
+
+.project-desc__text-thid{
+    font-size: 32px;
+}
+
+.project-desc-camps{
+    height: 240px;
+}
+
+.project-desc-tales{
+    height: 190px;
+}
+
+.project-desc__text-novels{
+    height: 250px;
+}
+
+/*
+    Старт майл
+*/
+
+#contacts-container{
+    background-image: url('./content/contacts/mail.png');
+    height: 800px;
+    background-size: cover;
+    margin-top: 150px;
+}
+
+.backg-contacts{
+    margin-top: -20px;
+    display: flex;
+}
+
+.text-contacts{
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #FFF;
+    font-family: 'Itim', cursive;
+    margin-left: 100px;
+    margin-top: 100px;
+    height: 200px;
+}
+
+.contacts{
+    display: flex;
+    margin: 0 auto;
+}
+
+.text-contacts__second{
+    margin-left: 100px;
+}
+
+.uniForm{
+    margin-left: -400px;
+    margin-top: 400px;
+    position: relative;
+}
+
+input{
+    margin-left: -300px;
+    margin-top: 100px;
+    background: transparent ;
+    border: none;
+    border-bottom: 5px solid #fff;
+    height: 70px;
+    width: 700px;
+    padding: 0px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+}
+
+input:focus::placeholder{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+}
+
+input:focus{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    transition: all 0.3s ease;
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    transition: all 0.3s ease;
+}
+
+.submit_but{
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: none;
+    width: 130px;
+    height: 40px;
+    margin-left: -15px;
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+}
+
+.submit_but:hover{
+    background: #000000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.paragraph-buy{
+    margin-left: 60px;
+}
+
+/*
+    Конец майл
+*/
+
+/*
+Начало контакты 
+*/
+
+.first-text_contacts{
+    color: #fff;
+    margin: 100px auto;
+}
+
+.contacts-information{
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.contacts-information_sections{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Размещаем содержимое по горизонтали по центру */
+    align-items: center;
+}
+
+.phone{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.phone-text{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.phone-number{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.phone-number_ukr{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.phone-number-btn{
+    max-width: 250px;
+}
+
+.phone-number-btn:hover .phone-number{
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.address-text{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.address-content{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.address-btn:hover .address-content{
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+#instagram-btn .instagram-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#instagram-btn:hover .instagram-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.instagram-txt{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+}
+
+.contacts-information_second_section{
+    margin-left: 40px;
+}
+
+.social_media{
+    display: flex; /* Размещение элементов в линию */
+    justify-content: center; /* Выравнивание элементов по центру по горизонтали */
+    align-items: center; 
+}
+
+.telegram{
+    margin-left: 20px;
+}
+
+#telegram-btn .telegram-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#telegram-btn:hover .telegram-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.whatsapp{
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.whatsapp-img{
+    height: 70px;
+    width: 70px;
+}
+
+#whatsapp-btn .whatsapp-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#whatsapp-btn:hover .whatsapp-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+#youtube-btn .youtube-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#youtube-btn:hover .youtube-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.youtube{
+    margin-left: 20px;
+}
+
+.youtube-img{
+    height: 60px;
+    width: 70px;
+}
