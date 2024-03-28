@@ -1,0 +1,378 @@
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: linear-gradient(#939393, #000000, #939393);
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.paragraph{
+    margin-left: 40px;
+}
+
+.text{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color:#fff;
+}
+
+/*START MENU*/
+
+.menu{
+    margin-top: 21px;
+    width: 100%;
+    height: 60px;
+    background-color: #5B5A5A;
+    position: relative;
+}
+
+.text-first{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+    color:#fff;
+    margin-top: 16px;
+    left: 100px;
+    position: absolute;
+}
+
+.menu--list{
+    white-space: nowrap;
+}
+
+.menu-text__list{
+    position: absolute;
+    right: 100px;
+}
+
+.menu-text__list--textion{
+    display: inline;
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.menu-text__list--textion_button{
+    color: #fff;
+}
+
+.menu-text__list--textion_button:hover{
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu-text__list--textion:last-child{
+    margin-right: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+/*END MENU*/
+
+.first-text{
+    font-size: 60px;
+    font-family: 'Itim', cursive;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.first-section{
+    width: 400px;
+}
+
+.content{
+    justify-content: center;
+    margin: 200px auto;
+    display: flex;
+}
+
+.textion{
+    margin-top: 150px;
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+.img-trips{
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.text-second-section{
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.text-third{
+    margin-top: 50px;
+}
+
+.text-fourth{
+    margin-left: 20px;
+    margin-top: 200px;
+}
+
+/*
+    Старт майл
+*/
+
+#contacts-container{
+    background-image: url('./content/contacts/mail.png');
+    height: 800px;
+    background-size: cover;
+}
+
+.backg-contacts{
+    margin-top: -20px;
+    display: flex;
+}
+
+.text-contacts{
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #FFF;
+    font-family: 'Itim', cursive;
+    margin-left: 100px;
+    margin-top: 100px;
+    height: 200px;
+}
+
+.contacts{
+    display: flex;
+    margin: 0 auto;
+}
+
+.text-contacts__second{
+    margin-left: 100px;
+}
+
+.uniForm{
+    margin-left: -400px;
+    margin-top: 400px;
+    position: relative;
+}
+
+input{
+    margin-left: -300px;
+    margin-top: 100px;
+    background: transparent ;
+    border: none;
+    border-bottom: 5px solid #fff;
+    height: 70px;
+    width: 700px;
+    padding: 0px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+}
+
+input:focus::placeholder{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+}
+
+input:focus{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    transition: all 0.3s ease;
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Itim', cursive;
+    transition: all 0.3s ease;
+}
+
+.submit_but{
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: none;
+    width: 130px;
+    height: 40px;
+    margin-left: -15px;
+    font-family: 'Itim', cursive;
+    font-size: 25px;
+}
+
+.submit_but:hover{
+    background: #000000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.paragraph-buy{
+    margin-left: 60px;
+}
+
+/*
+    Конец майл
+*/
+
+/*
+Начало контакты 
+*/
+
+.first-text_contacts{
+    color: #fff;
+    margin: 100px auto;
+}
+
+.contacts-information{
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.contacts-information_sections{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Размещаем содержимое по горизонтали по центру */
+    align-items: center;
+}
+
+.phone{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.phone-text{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.phone-number{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.phone-number_ukr{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.phone-number-btn{
+    max-width: 250px;
+}
+
+.phone-number-btn:hover .phone-number{
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.address-text{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.address-content{
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+    color: #fff;
+}
+
+.address-btn:hover .address-content{
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+#instagram-btn .instagram-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#instagram-btn:hover .instagram-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.instagram-txt{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Itim', cursive;
+}
+
+.contacts-information_second_section{
+    margin-left: 40px;
+}
+
+.social_media{
+    display: flex; /* Размещение элементов в линию */
+    justify-content: center; /* Выравнивание элементов по центру по горизонтали */
+    align-items: center; 
+}
+
+.telegram{
+    margin-left: 20px;
+}
+
+#telegram-btn .telegram-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#telegram-btn:hover .telegram-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.whatsapp{
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.whatsapp-img{
+    height: 70px;
+    width: 70px;
+}
+
+#whatsapp-btn .whatsapp-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#whatsapp-btn:hover .whatsapp-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+#youtube-btn .youtube-img {
+    transition: transform 0.5s ease; /* Плавное переходное изменение */
+}
+
+#youtube-btn:hover .youtube-img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+.youtube{
+    margin-left: 20px;
+}
+
+.youtube-img{
+    height: 60px;
+    width: 70px;
+}
