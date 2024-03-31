@@ -219,7 +219,7 @@ ul{
 .filter{
     margin-top: 50px;
     display: flex;
-    margin-left: 30px;
+    margin-left: 65px;
 }
 
 .filter__item{
@@ -256,7 +256,7 @@ ul{
     justify-content: center;
     align-items:center;
     width: 840px;
-    margin-left: 10px;
+    margin-left: 55px;
 }
 
 .projects-item{
@@ -271,7 +271,7 @@ ul{
 }
 
 .projects-item_first{
-    margin-left: 180px
+    margin-left: 180px;
 }
 
 .projects-content{
