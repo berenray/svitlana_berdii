@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
         localStorage.removeItem('reloadFlag'); // Опционально, чтобы удалить флаг после первой загрузки
     }
+  });
 
   (function() {
     const elem = document.querySelector(".my-projects");
@@ -36,6 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   })();
-});
+
 
 
