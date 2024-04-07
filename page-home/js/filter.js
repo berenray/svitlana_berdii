@@ -27,13 +27,11 @@
   });
 })();
 
-const reloadFlag = localStorage.getItem('reloadFlag');
-
-if (!reloadFlag) {
-    localStorage.setItem('reloadFlag', 'true');
-    location.reload();
+if (localStorage.getItem("reload") === "false") {
+  localStorage.removeItem("reload");
 } else {
-    localStorage.removeItem('reloadFlag'); // Опционально, чтобы удалить флаг после первой загрузки
+  localStorage.setItem("reload", "false");
+  window.location = window.location;
 }
   
 
