@@ -33,7 +33,6 @@ if (localStorage.getItem("reload") === "false") {
   localStorage.setItem("reload", "false");
   window.location = window.location;
 }
-  
 
 
 
