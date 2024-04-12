@@ -17,7 +17,7 @@ body{
 }
 
 .backg{
-    background: url('content/backgroundd.png');
+    background: url('../content/backgroundd.png');
     width: 100%;
     height: 1000px;
 }
@@ -379,7 +379,7 @@ ul{
 */
 
 #contacts-container{
-    background-image: url('content/contacts/maill.png');
+    background-image: url('../content/contacts/maill.png');
     height: 800px;
     background-size: cover;
     margin-top: 150px;
