@@ -126,6 +126,8 @@ ul{
 .nursery-img{
     border-radius: 20px;
     margin-right: 20px;
+    width: 500px;
+    height: 700px;
 }
 
 .nursery-img-second{
@@ -199,7 +201,7 @@ ul{
 */
 
 #contacts-container{
-    background-image: url('/page-home/content/contacts/mail.png');
+    background-image: url('../content/contacts/mail.png');
     height: 800px;
     background-size: cover;
 }
