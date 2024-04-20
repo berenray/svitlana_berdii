@@ -255,6 +255,10 @@ input::placeholder{
     margin-left: 60px;
 }
 
+.content_container{
+    display: flex;
+}
+
 /*
     Конец майл
 */
@@ -401,3 +405,48 @@ input::placeholder{
     height: 60px;
     width: 70px;
 }
+
+/* Animate */
+
+.menu_animated_before{
+    opacity: 0;
+}
+
+.menu_animated {
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+
+.courser_animated_before{
+    opacity: 0;
+    transform: translateX(-3%);
+}
+
+.courses_animated{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all .8s ease-in;
+}
+
+.buy-btn-animate_before{
+    opacity: 0;
+    transform: translateY(+3%);
+}
+
+.buy-btn-animate{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all .8s ease-in;
+}
+
+.contacts-text-animate_before{
+    opacity: 0;
+    transform: translateX(-10%);
+}
+
+.contacts-text-animate{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all .5s ease-in;
+}
+
