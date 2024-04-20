@@ -194,14 +194,182 @@ ul{
     opacity: 1;
 }
 
-.container-my_projects{
+.my_projects{
     margin-top: 900px;
+    text-align: center;
 }
 
-.content-projects{
-    justify-content: center;
-    align-items: center;
+.first_text_projects{
+    font-size: 60px ;
+    color:#fff;
+    font-family: 'Itim', cursive;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
+
+.tabs-btn{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.filter__link--active{
+    background-color:#fff;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.filter__item{
+    padding: 10px 10px;
+}
+
+.filter_btn{
+    margin-right: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color:#fff;
+    background-color: #5B5A5A;
+    font-family: 'Itim', cursive;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #fff , #fff);
+    background-repeat: no-repeat; 
+    background-size: 0 100%; 
+    transition: 0.3s; 
+}
+
+.filter_btn:hover{
+    background-size: 100% 100%; 
+    color: #000000;
+}
+
+.tabs-content{
+    display: flex;
+    justify-content: center;
+}
+
+.projects-portfolio{
+    display: flex;
+    max-width: 820px;
+    flex-wrap: wrap;
+}
+
+.container_projects_third{
+    margin: 0 auto;
+}
+
+
+.products__item{
+    margin-bottom: 35px;
+    margin-left: 27px; 
+    position: relative;
+}
+
+.products__content{
+     height: 100%; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative; 
+     overflow: hidden  ;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+
+.products__desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 23px 30px;
+    background: rgba(35, 35, 35, .8);  
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform .3s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.products__img{
+    display: block;
+    border-radius: 20px;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-family: 'Itim', cursive;
+    font-size: 24px;
+    padding: 2px  30px;
+    background-color: black ;
+    color: #fff ;
+    display: inline-block;
+    text-decoration: none ;
+    background-color: #000000;
+    font-family: 'Itim', cursive;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #fff , #fff);
+    background-repeat: no-repeat; 
+    background-size: 0 100%; 
+    transition: 0.3s; 
+}
+
+.products__desc-text{
+    text-align: center;
+    margin-bottom: 18px;
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    color: #ffffff98 ;
+}
+
+.first-text_desc{
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: 'Itim', cursive;
+    color: #fff ;
+}
+
+.products__item:hover .products__desc{
+    transform: translateY(0%);
+}
+
+.btn:hover{
+    background-size: 100% 100%; 
+    color: #000000 ;
+}
+
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: .8s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+        transform: translateY(+0.8%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+/*
+    Старт майл
+*/
 
 .first-text{
     font-size: 60px;
@@ -210,173 +378,6 @@ ul{
     font-family: 'Itim', cursive;
     text-align: center;
 }
-.container-projects{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    margin: 0 auto;
-}
-
-.filter{
-    margin-top: 50px;
-    display: flex;
-    margin-left: 65px;
-}
-
-.filter__item{
-    margin-right: 70px;
-}
-
-.filter__item:last-child{
-    margin-right: 0px;
-}
-
-.filter__link{
-    color:#000000;
-    font-family: 'Itim', cursive;
-    font-size: 35px;
-    text-transform: uppercase;
-    background-color:#fff; 
-    padding: 10px 10px;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, #000000 , #000000);
-    background-repeat: no-repeat; 
-    background-size: 0 100%; 
-    transition: 0.3s; 
-}
-
-.filter__link:hover{
-    border-radius: 10px;
-    color: #fff;
-    background-size: 100% 100%; 
-}
-
-.my-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:center;
-    width: 840px;
-    margin-left: 55px;
-}
-
-.projects-item{
-    margin-right: 50px;
-    margin-left: -20px;
-    margin-top: 20px;
-    position: relative;
-}
-
-.img-my-projects{
-    border-radius: 20px;
-}
-
-.projects-item_first{
-    margin-left: 180px;
-}
-
-.projects-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden  ;
-    position: relative;
-    height: 100%;
-}
-
-.project-desc__button{
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    color: #fff;
-    font-family: 'Itim', cursive;
-    padding: 5px 40px;
-    border-radius: 5px;
-    background-color: #000000;
-    background-image: linear-gradient(to right, #fff , #fff);
-    background-repeat: no-repeat; 
-    background-size: 0 100%; 
-    transition: 0.3s; 
-}
-
-.project-desc__button:hover{
-    color: #000000;
-    background-size: 100% 100%; 
-}
-
-.projects-item:hover .project-desc{
-    transform: translateY(0%);
-
-}
-
-.project-desc__text-first{
-    color: #fff;
-    font-family: 'Itim', cursive;
-    text-transform: uppercase;
-    font-size: 35px;
-}
-
-
-.project-desc{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 30px 23px;
-    background-color: rgba(35, 35, 35, .8);
-    color: #fff;
-    font-family: 'Itim', cursive;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    transform: translateY(100%);
-    transition: transform .3s;
-    height: 230px;
-}
-
-.project-desc__text{
-    text-align: center;
-    font-size: 28px;
-}
-
-.project-desc-first{
-    height: 290px;
-    width: 335px;
-}
-
-.project-desc__text-first_first{
-    font-size: 45px;
-}
-
-.project-desc__text-second{
-    font-size: 30px;
-}
-
-.project-desc-second{
-    height: 290px;
-}
-
-.project-desc__text-thid{
-    font-size: 32px;
-}
-
-.project-desc-camps{
-    height: 240px;
-}
-
-.project-desc-tales{
-    height: 190px;
-}
-
-.project-desc__text-novels{
-    height: 250px;
-}
-
-/*
-    Старт майл
-*/
 
 #contacts-container{
     background-image: url('../content/contacts/maill.png');

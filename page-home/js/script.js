@@ -18,46 +18,46 @@ window.addEventListener('DOMContentLoaded', () => {
             slides[index].classList.add(activeClass)
         }, 4000)
     
-    }())
+    }()); 
 
     //Filter
+    const tabs = document.querySelectorAll('.filter__item'),
+        tabsContent = document.querySelectorAll('.projects-portfolio'),
+        tabsParent = document.querySelector('.tabs-btn');
 
-    function Filter () {
-        const elem = document.querySelector(".my-projects");
-        const iso = new Isotope(elem, {
-          itemSelector: ".projects-item",
-          filter: '.montessori'
+    function hideTabContent (){
+        tabsContent.forEach(item => {
+            item.classList.add('hide');
+            item.classList.remove('show', 'fade');
         });
-      
-        const controlls = document.querySelectorAll(".filter__link");
-        const activeClass = "filter__link--active";
-      
-        controlls.forEach(function(control) {
-          control.addEventListener("click", function(e) {
-            e.preventDefault();
-            
-            const filterName = control.getAttribute("data-filter");
-      
-            controlls.forEach(function(link) {
-              link.closest(".filter__item").classList.remove(activeClass);
-            });
-      
-            control.closest(".filter__item").classList.add(activeClass);
-      
-            iso.arrange({
-              filter: `.${filterName}`
-            })
-          });
+
+        tabs.forEach(item => {
+            item.classList.remove('filter__link--active');
         });
-      };
-      
-      if (localStorage.getItem("reload") === "false") {
-        localStorage.removeItem("reload");
-      } else {
-        localStorage.setItem("reload", "false");
-        window.location = window.location;
-      }
-    
+    };
+
+    function showAppContent (i = 0) {
+        tabsContent[i].classList.add('show', 'fade');
+        tabsContent[i].classList.remove('hide');
+        tabs[i].classList.add('filter__link--active');
+    };
+
+    hideTabContent();
+    showAppContent(0);
+
+tabsParent.addEventListener('click', (event) => {
+    const target = event.target;
+
+    if(target && target.classList.contains('filter__item')) {
+        tabs.forEach((item, i) => {
+            if (target == item) {
+                hideTabContent();
+                showAppContent(i);
+            }
+        });
+    }
+});
+
     //Mail
 
     const mailPath = 'mail.php'
