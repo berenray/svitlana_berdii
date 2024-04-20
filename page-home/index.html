@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Itim&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
 </head> 
 <body>
 
@@ -19,7 +18,7 @@
     <div class="backg">
      <div class="container">
         <div class="menu">
-            <div class="menu-text animate__animated animate__fadeInDown">
+            <div class="menu-text menu_animation_before">
                 <div class="text-name">
                     <div class="text-first">
                      <a href="" class="menu-text__list--textion_button">
@@ -58,12 +57,13 @@
     <!--END MENU--> 
     <div class="container">
         <div class="start-page">
+            <div class="start-page_content">
             <div class="first-section">
-                <div class="img">
+                <div class="img menu_animation_before">
                     <img src="./content/avatar.png" alt="" class="logo">
                 </div>
             </div>
-            <div class="second-section">
+            <div class="second-section animte_first-section_before">
                 <div class="content-second-section">
                     <div class="text-second-section">
                         <div class="text text_about-me">
@@ -76,17 +76,18 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
     <div id="about--me" class="container container-about-me">
         <div class="section-about-me">
-            <div class="first-section_section-about-me">
+            <div class="first-section_section-about-me animte_first-section_before">
                 <div class="text-first-section">
                     <div class="text text_first-text-about-me">
                         Hey!
                     </div>
                     <div class="text text_about-me-section">
                         ”Be realistic, demand the impossible"
-Ernest Che Guevaro words, but they express me better than any others. All my life I set impossible goals and work hard to achieve them. From my childhood I have been studying and developing myself. Not only in (teaching) educational sphere but also in spiritual psychology. I know there is the connection between inner and material world.
+Ernest Che Guevaro words, but they express me better than any others. All my life I set impossible <span class="animate-about"></span>goals</span> and work hard to achieve them. From my childhood I have been studying and developing myself. Not only in (teaching) educational sphere but also in spiritual psychology. I know there is the connection between inner and material world.
                     </div>
                     <div class="btn-read-more">
                         <a href="https://www.instagram.com/svetlanaberdii?igsh=ZTBqbGd1YjZxeWp3" target="_blank" class="btn-read-more_about-me">
@@ -97,7 +98,8 @@ Ernest Che Guevaro words, but they express me better than any others. All my lif
                     </div>
                 </div>
             </div>
-                <ul class="fade-slider">
+            <div class="fade-slider-container animte_slider_before">
+                <ul class="fade-slider ">
                     <li class="fade-slider__item fade-slider__item-active">
                         <div class="slider__photo">
                             <img class="photo-slider" src="./content/slider/slider 1.png" alt="">
@@ -144,26 +146,27 @@ Ernest Che Guevaro words, but they express me better than any others. All my lif
                         </div>
                     </li>
                 </ul>
+            </div>
         </div>
     </div>
 </div>  
 <div class="container">
-<div id="#portfolio" class="my_projects">
-    <div class="first_text_projects">
+<div id="portfolio" class="my_projects">
+    <div class="first_text_projects menu_animation_before">
         my projects
     </div>
     <div class="tabs-btn">
-        <a href="##" class="filter_btn">
+        <a href="##" class="filter_btn animte_slider_before">
             <div class="filter__item filter__link--active">
                 Montessori
             </div>  
         </a> 
-        <a href="##" class="filter_btn">
+        <a href="##" class="filter_btn animte_slider_before">
             <div class="filter__item">
                 English
             </div>
         </a>
-        <a href="##" class="filter_btn">
+        <a href="##" class="filter_btn animte_slider_before">
             <div class="filter__item">
                 My books
             </div>
@@ -171,7 +174,7 @@ Ernest Che Guevaro words, but they express me better than any others. All my lif
     </div>
     <div class="tabs-content">
         <div class="projects-portfolio">
-            <div class="products__item">
+            <div class="products__item products__item_animate animate_tabs_before">
                 <div class="products__content">
                     <img src="./content/My projects/montessori cousres.jpeg" class="products__img">
                     <div class="products__desc">
@@ -185,7 +188,7 @@ Ernest Che Guevaro words, but they express me better than any others. All my lif
                     </div>
                 </div>
              </div>
-             <div class="products__item">
+             <div class="products__item products__item_animate animate_tabs_before">
                 <div class="products__content">
                     <img src="./content/My projects/montessori nursery.jpeg" class="products__img">
                     <div class="products__desc">
@@ -199,8 +202,9 @@ Ernest Che Guevaro words, but they express me better than any others. All my lif
                     </div>
                 </div>
              </div>
+             <div class="animate_filter_content"></div>
              <div class="container_projects_third">
-                <div class="products__item">
+                <div class="products__item products__item_animate animate_tabs_before">
                     <div class="products__content">
                         <img src="./content/My projects/montessori trips.jpeg" class="products__img">
                         <div class="products__desc">
@@ -300,14 +304,14 @@ Ernest Che Guevaro words, but they express me better than any others. All my lif
     <div class="backg-contacts">
     </div>
     <div class="contacts">
-    <div class="text-contacts">
+    <div class="text-contacts animate_text_mail_before">
         connect to my world  
         <div class="text-contacts__second">
             by leaving a message 
         </div> 
     </div>
 
-    <form class="uniForm">
+    <form class="uniForm menu_animation_before">
 
         <!-- Hidden Required Fields -->
         <input type="hidden" name="project_name" value="Site Name">
@@ -320,6 +324,7 @@ Ernest Che Guevaro words, but they express me better than any others. All my lif
         <button class="submit_but">Send</button>
     </div>
     </form>
+    <span class="animate_form"></span>
 </section>
 <!-- END MAIL -->
 <!-- Start contacts -->
@@ -327,9 +332,10 @@ Ernest Che Guevaro words, but they express me better than any others. All my lif
    <div class="conteiner">
     <div class="contacts-information">
         <div class="first-text first-text_contacts">
-            contacts information
+            <span class="text-contacts_animation menu_animation_before">c</span><span class="text-contacts_animation menu_animation_before">o</span><span class="text-contacts_animation menu_animation_before">n</span><span class="text-contacts_animation menu_animation_before">t</span><span class="text-contacts_animation menu_animation_before">a</span><span class="text-contacts_animation menu_animation_before">c</span><span class="text-contacts_animation menu_animation_before">t</span><span class="text-contacts_animation menu_animation_before">s</span>
+            <span class="text-contacts_animation menu_animation_before">i</span><span class="text-contacts_animation menu_animation_before">n</span><span class="text-contacts_animation menu_animation_before">f</span><span class="text-contacts_animation menu_animation_before">o</span><span class="text-contacts_animation menu_animation_before">r</span><span class="text-contacts_animation menu_animation_before">m</span><span class="text-contacts_animation menu_animation_before">a</span><span class="text-contacts_animation menu_animation_before">t</span><span class="text-contacts_animation menu_animation_before">i</span><span class="text-contacts_animation menu_animation_before">o</span><span class="text-contacts_animation menu_animation_before">n</span>
         </div>
-        <div class="contacts-information_sections">
+        <div class="contacts-information_sections animte_slider_before">
             <div class="contacts-information_first_section">
                 <div class="phone">
                     <div class="phone-text">

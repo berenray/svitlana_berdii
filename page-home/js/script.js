@@ -145,4 +145,126 @@ tabsParent.addEventListener('click', (event) => {
         image.src = "content/contacts/youtube hover.png";
     });
 
+
+    // Animation
+
+    const windowHeight = window.innerHeight,
+        menuText = document.querySelector('.menu-text'),
+        imgLogo = document.querySelector('.img'),
+        firstSection = document.querySelector('.second-section'),
+        aboutText = document.querySelector('.first-section_section-about-me'),
+        aboutSlider = document.querySelector('.fade-slider-container'),
+        firstTextProjects = document.querySelector('.first_text_projects'),
+        tabsBtns = document.querySelectorAll('.filter_btn'),
+        tabsContentAnimate = document.querySelectorAll('.products__item_animate'),
+        textMail = document.querySelector('.text-contacts'),
+        formMail = document.querySelector('.uniForm'),
+        textContacts = document.querySelectorAll('.text-contacts_animation'),
+        contactsInformation = document.querySelector('.contacts-information_sections');
+
+
+    menuText.classList.remove('menu_animation_before');
+    menuText.classList.add('menu_animation');
+    imgLogo.classList.remove('menu_animation_before');
+    imgLogo.classList.add('menu_animation');
+    firstSection.classList.remove('animte_first-section_before');
+    firstSection.classList.add('animate__first_section');
+
+    window.addEventListener('scroll', () =>{
+        const aboutTextElement = document.querySelector('.animate-about'),
+            aboutTextElementPosition = aboutTextElement.getBoundingClientRect().top;
+
+        if(aboutTextElementPosition < windowHeight) {
+            aboutText.classList.remove('animte_first-section_before');
+            aboutText.classList.add('animate__first_section');
+            aboutSlider.classList.remove('animte_slider_before');
+            aboutSlider.classList.add('animate__slider_section');
+        }
+    });
+
+    window.addEventListener('scroll', () => {
+        const firstTextProjectsElement = document.querySelector('.tabs-btn'),
+            firstTextProjectsElementPosition = firstTextProjectsElement.getBoundingClientRect().top;
+
+        if(firstTextProjectsElementPosition < windowHeight) {
+            firstTextProjects.classList.remove('menu_animation_before');
+            firstTextProjects.classList.add('menu_animation');
+        }
+    });
+
+    window.addEventListener('scroll', () => {
+        const tabsBtnsElement = document.querySelector('.tabs-content'),
+            tabsBtnsElementPosition = tabsBtnsElement.getBoundingClientRect().top;
+
+        let index = 0
+
+        if(tabsBtnsElementPosition < windowHeight) {
+                setInterval(() => {
+                    tabsBtns[index].classList.remove('animte_slider_before');
+                    tabsBtns[index].classList.add('animate__slider_section');
+                    index = index +1;
+                }, 200)
+        }
+    });
+
+    window.addEventListener('scroll', () => {
+        const tabsContentAnimateElement = document.querySelector('.animate_filter_content'),
+            tabsContentAnimateElementPosition = tabsContentAnimateElement.getBoundingClientRect().top;
+
+        let index = 0;
+
+        if(tabsContentAnimateElementPosition < windowHeight) {
+            setInterval(()=>{
+                tabsContentAnimate[index].classList.remove('animate_tabs_before');
+                tabsContentAnimate[index].classList.add('animate-tabs');
+                index = index + 1;
+            }, 300)
+        }
+    });
+
+    window.addEventListener('scroll', ()=> {
+        const textMailElement = document.querySelector('.uniForm'),
+            textMailElementPosition = textMailElement.getBoundingClientRect().top;
+
+        if(textMailElementPosition < windowHeight) {
+            textMail.classList.remove('animate_text_mail_before');
+            textMail.classList.add('animate_text_mail')
+        }
+    });
+
+    window.addEventListener('scroll', ()=> {
+        const formMailElement = document.querySelector('.animate_form'),
+            formMailElementPosition = formMailElement.getBoundingClientRect().top;
+
+        if(formMailElementPosition < windowHeight) {
+            formMail.classList.remove('menu_animation_before');
+            formMail.classList.add('menu_animation');
+        }
+    });
+
+    window.addEventListener('scroll', ()=> {
+        const textContactsElement = document.querySelector('.phone'),
+            textContactsElementPosition = textContactsElement.getBoundingClientRect().top;
+
+        let index = 0;
+
+        if(textContactsElementPosition < windowHeight) {
+            setInterval(()=>{
+                textContacts[index].classList.remove('menu_animation_before');
+                textContacts[index].classList.add('menu_animation');
+                index = index + 1;
+            }, 50)
+        }
+
+    });
+
+    window.addEventListener('scroll', ()=> {
+        const contactsInformationElement = document.querySelector('.address'),
+            contactsInformationElementPosition = contactsInformationElement.getBoundingClientRect().top;
+
+        if(contactsInformationElementPosition < windowHeight) {
+            contactsInformation.classList.remove('animte_slider_before');
+            contactsInformation.classList.add('animate__slider_section');
+        }
+    });
 })
