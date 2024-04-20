@@ -160,7 +160,10 @@ tabsParent.addEventListener('click', (event) => {
         textMail = document.querySelector('.text-contacts'),
         formMail = document.querySelector('.uniForm'),
         textContacts = document.querySelectorAll('.text-contacts_animation'),
-        contactsInformation = document.querySelector('.contacts-information_sections');
+        contactsInformation = document.querySelector('.contacts-information_sections'),
+        counterTabsBtns = 3,
+        counterTabsContent = 3,
+        counterContactsText = 19;
 
 
     menuText.classList.remove('menu_animation_before');
@@ -199,10 +202,13 @@ tabsParent.addEventListener('click', (event) => {
         let index = 0
 
         if(tabsBtnsElementPosition < windowHeight) {
-                setInterval(() => {
+            const interval = setInterval(() => {
                     tabsBtns[index].classList.remove('animte_slider_before');
                     tabsBtns[index].classList.add('animate__slider_section');
                     index = index +1;
+                    if(index >= counterTabsBtns){
+                        clearInterval(interval)
+                    }
                 }, 200)
         }
     });
@@ -214,10 +220,13 @@ tabsParent.addEventListener('click', (event) => {
         let index = 0;
 
         if(tabsContentAnimateElementPosition < windowHeight) {
-            setInterval(()=>{
+            const interval = setInterval(()=>{
                 tabsContentAnimate[index].classList.remove('animate_tabs_before');
                 tabsContentAnimate[index].classList.add('animate-tabs');
                 index = index + 1;
+                if(index >= counterTabsContent){
+                    clearInterval(interval);
+                }
             }, 300)
         }
     });
@@ -249,10 +258,13 @@ tabsParent.addEventListener('click', (event) => {
         let index = 0;
 
         if(textContactsElementPosition < windowHeight) {
-            setInterval(()=>{
+            const interval = setInterval(()=>{
                 textContacts[index].classList.remove('menu_animation_before');
                 textContacts[index].classList.add('menu_animation');
                 index = index + 1;
+                if(index >= counterContactsText) {
+                    clearInterval(interval)
+                }
             }, 50)
         }
 
