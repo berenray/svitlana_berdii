@@ -376,3 +376,47 @@ input::placeholder{
     height: 60px;
     width: 70px;
 }
+
+/* Animation */
+
+.menu_animation_before{
+    opacity: 0;
+}
+
+.menu_animation{
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+
+.img-animation_before{
+    opacity: 0;
+    transform: translateX(-3%);
+}
+
+.img-animation{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all .7s ease-in;
+}
+
+.img-animation-second_before{
+    opacity: 0;
+    transform: translateX(+3%);
+}
+
+.img-animation-second{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease-in;
+}
+
+.animate_text_mail_before {
+    opacity: 0;
+    transform: translateX(-10%);
+}
+
+.animate_text_mail {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all .7s ease-in;
+}
