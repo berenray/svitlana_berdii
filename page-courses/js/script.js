@@ -95,8 +95,6 @@ window.addEventListener('DOMContentLoaded', () => {
         menu = document.querySelector('.menu-text'),
         firstText = document.querySelectorAll('.first-text_animate'),
         coursesFirst = document.querySelector('.content_container'),
-        counterFirstText = 17,
-        counterContactsText = 19,
         coursesSecond = document.querySelector('.courses-content_second'),
         buyBtn = document.querySelector('.container_buy'),
         textContacts = document.querySelector('.text-contacts'),
@@ -115,7 +113,7 @@ window.addEventListener('DOMContentLoaded', () => {
         firstText[index].classList.remove('menu_animated_before');
         firstText[index].classList.add('menu_animated');
         index = index + 1;
-        if(index >= counterFirstText) {
+        if(index >= firstText.length) {
             clearInterval(interval);
         }
     }, 30);
@@ -171,7 +169,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 contactsText[index].classList.remove('menu_animated_before');
                 contactsText[index].classList.add('menu_animated')
                 index = index +1;
-                if(index >= counterContactsText){
+                if(index >= contactsText.length){
                     clearInterval(interval);
                 }
             }, 30);

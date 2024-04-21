@@ -94,14 +94,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const windowHeight = window.innerHeight,
         menu = document.querySelector('.menu-text'),
-        firstTextcounter = 19,
         firstText = document.querySelectorAll('.first-text_animation'),
         firstSection = document.querySelector('.english-content_first-section'),
         secondSection = document.querySelector('.english-content_second-section'),
         thirdSection = document.querySelector('.english-content_third'),
         textMail = document.querySelector('.text-contacts'),
         mailContent = document.querySelector('.uniForm'),
-        contactsFirstTextCounter = 19,
         contactsFirstText = document.querySelectorAll('.text-contacts_animation'),
         contactsContent = document.querySelector('.contacts-information_sections');
 
@@ -118,7 +116,7 @@ window.addEventListener('DOMContentLoaded', () => {
             firstText[index].classList.remove('menu_animation_before');
             firstText[index].classList.add('menu_animation');
             index++;
-            if(index >= firstTextcounter) {
+            if(index >= firstText.length) {
                 clearInterval(intervalFirstText);
             }
     }, 30);
@@ -174,7 +172,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 contactsFirstText[index].classList.remove('menu_animation_before');
                 contactsFirstText[index].classList.add('menu_animation');
                 index++;
-                if(index >= contactsFirstTextCounter) {
+                if(index >= contactsFirstText.length) {
                     clearInterval(interval);
                 }
             }, 50);
