@@ -93,7 +93,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const windowHeight = window.innerHeight,
         menu = document.querySelector('.menu-text'),
-        firstText = document.querySelectorAll('.first-text_animation'),
+        firstContent = document.querySelector('.first-section'),
         firstSection = document.querySelector('.nursery-content_first'),
         secondSection = document.querySelector('.nursery-content_second'),
         thirdSection = document.querySelector('.nursery-content_third'),
@@ -109,15 +109,17 @@ window.addEventListener('DOMContentLoaded', () => {
     menu.classList.add('menu_animation');
     firstSection.classList.remove('img-animation_before');
     firstSection.classList.add('img-animation');
+    firstContent.classList.remove('animate_tabs_before');
+    firstContent.classList.add('animate-tabs');
 
-    const intervalFirstText = setInterval(()=>{
-        firstText[index].classList.remove('img-animation_before');
-        firstText[index].classList.add('img-animation');
-        index++;
-        if(index >= firstText.length){
-            clearInterval(intervalFirstText)
-        }
-    }, 50);
+    // const intervalFirstText = setInterval(()=>{
+    //     firstText[index].classList.remove('img-animation_before');
+    //     firstText[index].classList.add('img-animation');
+    //     index++;
+    //     if(index >= firstText.length){
+    //         clearInterval(intervalFirstText)
+    //     }
+    // }, 50);
 
 
     window.addEventListener('scroll', ()=> {

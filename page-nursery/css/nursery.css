@@ -86,6 +86,8 @@ ul{
 
 .nurssery-logo{
     border-radius: 50%;
+    width: 300px;
+    height: 300px;
 }
 
 .first-section_text{
@@ -493,4 +495,15 @@ input::placeholder{
     opacity: 1;
     transform: translateX(0%);
     transition: all .7s ease-in;
+}
+
+.animate_tabs_before{
+    opacity: 0;
+    transform: translateY(+1%);
+}
+
+.animate-tabs{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all .5s ease-in;
 }
