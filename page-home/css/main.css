@@ -652,7 +652,16 @@ input::placeholder{
     transition: all .5s ease-in;
 }
 
+.animte_slider_before{
+    opacity: 0;
+    transform: translateX(-1.3%);
+}
 
+.animate__slider_section{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease-in;
+}
 
 .animate_filter_content{
     position: absolute;

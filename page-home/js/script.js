@@ -200,11 +200,11 @@ tabsParent.addEventListener('click', (event) => {
 
         if(tabsBtnsElementPosition < windowHeight) {
             const interval = setInterval(() => {
-                    tabsBtns[index].classList.remove('animte_slider_before');
-                    tabsBtns[index].classList.add('animate__slider_section');
+                    tabsBtns[index].classList.remove('animate_slider_before');
+                    tabsBtns[index].classList.add('animate-tabs');
                     index = index +1;
                     if(index >= tabsBtns.length){
-                        clearInterval(interval)
+                        clearInterval(interval);
                     }
                 }, 200)
         }
