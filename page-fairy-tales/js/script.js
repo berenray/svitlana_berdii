@@ -100,8 +100,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     menu.classList.remove('menu_animated_before');
     menu.classList.add('menu_animated');
-    firstSection.classList.remove('courser_animated_before');
-    firstSection.classList.add('courses_animated');
+    firstSection.classList.toggle('courser_animated_before');
+    firstSection.classList.toggle('courses_animated');
 
     const interval = setInterval(()=> {
         firstText[index].classList.remove('menu_animated_before');
