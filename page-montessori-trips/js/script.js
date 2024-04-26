@@ -94,14 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const windowHeight = window.innerHeight,
         menu = document.querySelector('.menu-text'),
         firstText = document.querySelectorAll('.first-text-animation'),
-        firstSection = document.querySelector('.content_first-section'),
-        secondSection = document.querySelector('.content_second_section'),
-        thirdSection = document.querySelector('.content-third_section'),
-        fourthSection = document.querySelector('.content_fourth-section'),
-        textMail = document.querySelector('.text-contacts'),
-        mail = document.querySelector('.uniForm'),
-        textContacts = document.querySelectorAll('.text-contacts_animation'),
-        contactsContent = document.querySelector('.contacts-information_sections');
+        firstSection = document.querySelector('.content_first-section');
 
     let index = 0;
 
@@ -120,84 +113,76 @@ window.addEventListener('DOMContentLoaded', () => {
     },30);
 
     window.addEventListener('scroll', ()=> {
-        const secondSectionElement = document.querySelector('.second-section-animatin'),
+        const secondSection = document.querySelector('.content_second_section'),
+            secondSectionElement = document.querySelector('.second-section-animatin'),
             secondSectionElementPosition = secondSectionElement.getBoundingClientRect().top;
 
         if(secondSectionElementPosition < windowHeight){
             secondSection.classList.remove('img-animation-second_before');
             secondSection.classList.add('img-animation-second');
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const thirdSectionElement = document.querySelector('.third-section-animation'),
+        const thirdSection = document.querySelector('.content-third_section'),
+            thirdSectionElement = document.querySelector('.third-section-animation'),
             thirdSectionElementPosition = thirdSectionElement.getBoundingClientRect().top;
 
         if(thirdSectionElementPosition < windowHeight){
             thirdSection.classList.remove('img-animation_before');
             thirdSection.classList.add('img-animation');
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const fourthSectionElement = document.querySelector('.fourth-section-animation'),
+        const fourthSection = document.querySelector('.content_fourth-section'),
+            fourthSectionElement = document.querySelector('.fourth-section-animation'),
             fourthSectionElementPosition = fourthSectionElement.getBoundingClientRect().top;
 
         if(fourthSectionElementPosition < windowHeight){
             fourthSection.classList.remove('img-animation-second_before');
             fourthSection.classList.add('img-animation-second');
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const textMailElement = document.querySelector('.uniForm'),
+        const textMail = document.querySelector('.text-contacts'),
+            textMailElement = document.querySelector('.uniForm'),
             textMailElementPosition = textMailElement.getBoundingClientRect().top;
 
         if(textMailElementPosition < windowHeight){
             textMail.classList.remove('animate_text_mail_before');
             textMail.classList.add('animate_text_mail');
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const mailElement = document.querySelector('.mail-animation'),
+        const mail = document.querySelector('.uniForm'),
+            mailElement = document.querySelector('.mail-animation'),
             mailElementPosition = mailElement.getBoundingClientRect().top;
 
         if(mailElementPosition < windowHeight) {
             mail.classList.remove('menu_animation_before');
             mail.classList.add('menu_animation');
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const textContactsElement = document.querySelector('.phone'),
+        const textContacts = document.querySelectorAll('.text-contacts_animation'),  
+            textContactsElement = document.querySelector('.phone'),
             textContactsElementPosition = textContactsElement.getBoundingClientRect().top;
 
-        let index = 0;
+        let indexContacts = 0;
 
 
         if(textContactsElementPosition < windowHeight) {
             const interval = setInterval(()=> {
-                textContacts[index].classList.remove('menu_animation_before');
-                textContacts[index].classList.add('menu_animation');
-                index++;
-                if(index >= textContacts.length) {
+                textContacts[indexContacts].classList.remove('menu_animation_before');
+                textContacts[indexContacts].classList.add('menu_animation');
+                indexContacts++;
+                if(indexContacts >= textContacts.length) {
                     clearInterval(interval)
                 }
             }, 30)
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const contactsContentElement = document.querySelector('.address'),
+        const contactsContent = document.querySelector('.contacts-information_sections'),
+            contactsContentElement = document.querySelector('.address'),
             contactsContentElementPosition = contactsContentElement.getBoundingClientRect().top;
 
         if(contactsContentElementPosition < windowHeight){
             contactsContent.classList.remove('img-animation_before');
             contactsContent.classList.add('img-animation');
         }
-    })
-
-
-
+    });
 })

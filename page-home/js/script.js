@@ -151,16 +151,11 @@ tabsParent.addEventListener('click', (event) => {
     const windowHeight = window.innerHeight,
         menuText = document.querySelector('.menu-text'),
         imgLogo = document.querySelector('.img'),
-        firstSection = document.querySelector('.second-section'),
-        aboutText = document.querySelector('.first-section_section-about-me'),
-        aboutSlider = document.querySelector('.fade-slider-container'),
-        firstTextProjects = document.querySelector('.first_text_projects'),
-        tabsBtns = document.querySelectorAll('.filter_btn'),
-        tabsContentAnimate = document.querySelectorAll('.products__item_animate'),
-        textMail = document.querySelector('.text-contacts'),
-        formMail = document.querySelector('.uniForm'),
-        textContacts = document.querySelectorAll('.text-contacts_animation'),
-        contactsInformation = document.querySelector('.contacts-information_sections');
+        firstSection = document.querySelector('.second-section');
+        
+        
+        
+        
 
 
     menuText.classList.remove('menu_animation_before');
@@ -171,7 +166,10 @@ tabsParent.addEventListener('click', (event) => {
     firstSection.classList.add('animate__first_section');
 
     window.addEventListener('scroll', () =>{
-        const aboutTextElement = document.querySelector('.animate-about'),
+        // First-section
+        const aboutSlider = document.querySelector('.fade-slider-container'),
+            aboutText = document.querySelector('.first-section_section-about-me'),
+            aboutTextElement = document.querySelector('.animate-about'),
             aboutTextElementPosition = aboutTextElement.getBoundingClientRect().top;
 
         if(aboutTextElementPosition < windowHeight) {
@@ -180,77 +178,76 @@ tabsParent.addEventListener('click', (event) => {
             aboutSlider.classList.remove('animte_slider_before');
             aboutSlider.classList.add('animate__slider_section');
         }
-    });
 
-    window.addEventListener('scroll', () => {
-        const firstTextProjectsElement = document.querySelector('.tabs-btn'),
+        // Projects
+        const firstTextProjects = document.querySelector('.first_text_projects'),
+            firstTextProjectsElement = document.querySelector('.tabs-btn'),
             firstTextProjectsElementPosition = firstTextProjectsElement.getBoundingClientRect().top;
 
         if(firstTextProjectsElementPosition < windowHeight) {
             firstTextProjects.classList.remove('menu_animation_before');
             firstTextProjects.classList.add('menu_animation');
         }
-    });
 
-    window.addEventListener('scroll', () => {
-        const tabsBtnsElement = document.querySelector('.tabs-content'),
+        const tabsBtns = document.querySelectorAll('.filter_btn'),
+            tabsBtnsElement = document.querySelector('.tabs-content'),
             tabsBtnsElementPosition = tabsBtnsElement.getBoundingClientRect().top;
 
-        let index = 0
+        let indexTabs = 0
 
         if(tabsBtnsElementPosition < windowHeight) {
             const interval = setInterval(() => {
-                    tabsBtns[index].classList.remove('animate_slider_before');
-                    tabsBtns[index].classList.add('animate-tabs');
-                    index = index +1;
-                    if(index >= tabsBtns.length){
+                    tabsBtns[indexTabs].classList.remove('animate_slider_before');
+                    tabsBtns[indexTabs].classList.add('animate-tabs');
+                    indexTabs++;
+                    if(indexTabs >= tabsBtns.length){
                         clearInterval(interval);
                     }
                 }, 200)
         }
-    });
 
-    window.addEventListener('scroll', () => {
-        const tabsContentAnimateElement = document.querySelector('.animate_filter_content'),
+        const  tabsContentAnimate = document.querySelectorAll('.products__item_animate'),
+            tabsContentAnimateElement = document.querySelector('.animate_filter_content'),
             tabsContentAnimateElementPosition = tabsContentAnimateElement.getBoundingClientRect().top;
 
-        let index = 0;
+        let indexTabsContent = 0;
 
         if(tabsContentAnimateElementPosition < windowHeight) {
             const interval = setInterval(()=>{
-                tabsContentAnimate[index].classList.remove('animate_tabs_before');
-                tabsContentAnimate[index].classList.add('animate-tabs');
-                index = index + 1;
-                if(index >= tabsContent.length){
+                tabsContentAnimate[indexTabsContent].classList.remove('animate_tabs_before');
+                tabsContentAnimate[indexTabsContent].classList.add('animate-tabs');
+                indexTabsContent++;
+                if(indexTabsContent >= tabsContent.length){
                     clearInterval(interval);
                 }
             }, 300)
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const textMailElement = document.querySelector('.uniForm'),
+        // Mail
+
+        const textMail = document.querySelector('.text-contacts'),
+            textMailElement = document.querySelector('.uniForm'),
             textMailElementPosition = textMailElement.getBoundingClientRect().top;
 
         if(textMailElementPosition < windowHeight) {
             textMail.classList.remove('animate_text_mail_before');
             textMail.classList.add('animate_text_mail')
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const formMailElement = document.querySelector('.animate_form'),
+        const formMail = document.querySelector('.uniForm'),
+            formMailElement = document.querySelector('.animate_form'),
             formMailElementPosition = formMailElement.getBoundingClientRect().top;
 
         if(formMailElementPosition < windowHeight) {
             formMail.classList.remove('menu_animation_before');
             formMail.classList.add('menu_animation');
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const textContactsElement = document.querySelector('.phone'),
-            textContactsElementPosition = textContactsElement.getBoundingClientRect().top;
+        // Contacts
+
+        const textContacts = document.querySelectorAll('.text-contacts_animation'),
+        textContactsElement = document.querySelector('.phone'),
+        textContactsElementPosition = textContactsElement.getBoundingClientRect().top;
 
         let index = 0;
 
@@ -265,10 +262,8 @@ tabsParent.addEventListener('click', (event) => {
             }, 50)
         }
 
-    });
-
-    window.addEventListener('scroll', ()=> {
-        const contactsInformationElement = document.querySelector('.address'),
+        const contactsInformation = document.querySelector('.contacts-information_sections'),
+            contactsInformationElement = document.querySelector('.address'),
             contactsInformationElementPosition = contactsInformationElement.getBoundingClientRect().top;
 
         if(contactsInformationElementPosition < windowHeight) {

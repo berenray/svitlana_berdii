@@ -94,14 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const windowHeight = window.innerHeight,
         menu = document.querySelector('.menu-text'),
         firstContent = document.querySelector('.first-section'),
-        firstSection = document.querySelector('.nursery-content_first'),
-        secondSection = document.querySelector('.nursery-content_second'),
-        thirdSection = document.querySelector('.nursery-content_third'),
-        buyBtn = document.querySelector('.buy'),
-        textMail = document.querySelector('.text-contacts'),
-        mail = document.querySelector('.uniForm'),
-        textContacts = document.querySelectorAll('.text-contacts_animation'),
-        contactsContent = document.querySelector('.contacts-information_sections');
+        firstSection = document.querySelector('.nursery-content_first');
 
     let index = 0;
 
@@ -112,78 +105,65 @@ window.addEventListener('DOMContentLoaded', () => {
     firstContent.classList.remove('animate_tabs_before');
     firstContent.classList.add('animate-tabs');
 
-    // const intervalFirstText = setInterval(()=>{
-    //     firstText[index].classList.remove('img-animation_before');
-    //     firstText[index].classList.add('img-animation');
-    //     index++;
-    //     if(index >= firstText.length){
-    //         clearInterval(intervalFirstText)
-    //     }
-    // }, 50);
-
-
     window.addEventListener('scroll', ()=> {
-        const secondSectionElement = document.querySelector('.second-section-animation'),
+        const  secondSection = document.querySelector('.nursery-content_second'),
+            secondSectionElement = document.querySelector('.second-section-animation'),
             secondSectionElementPosition =secondSectionElement.getBoundingClientRect().top;
 
         if(secondSectionElementPosition < windowHeight){
             secondSection.classList.remove('img-animation-second_before');
             secondSection.classList.add('img-animation-second');
         }
-    });
 
-    window.addEventListener('scroll', ()=>{
-        const thirdSectionElement = document.querySelector('.third-section-animation'),
+        const thirdSection = document.querySelector('.nursery-content_third'),
+            thirdSectionElement = document.querySelector('.third-section-animation'),
             thirdSectionElementPosition = thirdSectionElement.getBoundingClientRect().top;
 
         if(thirdSectionElementPosition < windowHeight){
             thirdSection.classList.remove('img-animation_before');
             thirdSection.classList.add('img-animation');
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const buyBtnElement = document.querySelector('.backg-contacts'),
+        const buyBtn = document.querySelector('.buy'),
+            buyBtnElement = document.querySelector('.backg-contacts'),
             buyBtnElementPosition = buyBtnElement.getBoundingClientRect().top;
 
         if(buyBtnElementPosition< windowHeight){
             buyBtn.classList.remove('buy-btn-animate_before');
             buyBtn.classList.add('buy-btn-animate');
         }
-    });
-    window.addEventListener('scroll', ()=> {
-        const textMailElement = document.querySelector('.uniForm'),
+
+        const textMail = document.querySelector('.text-contacts'),
+            textMailElement = document.querySelector('.uniForm'),
             textMailElementPosition = textMailElement.getBoundingClientRect().top;
 
         if(textMailElementPosition < windowHeight){
             textMail.classList.remove('animate_text_mail_before');
             textMail.classList.add('animate_text_mail');
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const mailElement = document.querySelector('.mail-animation'),
+        const mail = document.querySelector('.uniForm'), 
+            mailElement = document.querySelector('.mail-animation'),
             mailElementPosition = mailElement.getBoundingClientRect().top;
 
         if(mailElementPosition < windowHeight) {
             mail.classList.remove('menu_animation_before');
             mail.classList.add('menu_animation');
         }
-    });
 
-    window.addEventListener('scroll', ()=> {
-        const textContactsElement = document.querySelector('.phone'),
+        const textContacts = document.querySelectorAll('.text-contacts_animation'),
+            textContactsElement = document.querySelector('.phone'),
             textContactsElementPosition = textContactsElement.getBoundingClientRect().top;
 
-        let index = 0;
+        let indexContacts = 0;
 
 
         if(textContactsElementPosition < windowHeight) {
             const interval = setInterval(()=> {
-                textContacts[index].classList.remove('menu_animation_before');
-                textContacts[index].classList.add('menu_animation');
-                index++;
-                if(index >= textContacts.length) {
+                textContacts[indexContacts].classList.remove('menu_animation_before');
+                textContacts[indexContacts].classList.add('menu_animation');
+                indexContacts++;
+                if(indexContacts >= textContacts.length) {
                     clearInterval(interval)
                 }
             }, 30)
@@ -191,7 +171,8 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('scroll', ()=> {
-        const contactsContentElement = document.querySelector('.address'),
+        const contactsContent = document.querySelector('.contacts-information_sections'),
+            contactsContentElement = document.querySelector('.address'),
             contactsContentElementPosition = contactsContentElement.getBoundingClientRect().top;
 
         if(contactsContentElementPosition < windowHeight){
