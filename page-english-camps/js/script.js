@@ -178,7 +178,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }, 50)
         }
 
-        const contactsContent = document.querySelector('.contacts-information_sections');
+        const contactsContent = document.querySelector('.contacts-information_sections'),
             contactsContentElement = document.querySelector('.address'),
             contactsContentElementPosition = contactsContentElement.getBoundingClientRect().top;
 
