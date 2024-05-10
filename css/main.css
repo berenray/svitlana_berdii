@@ -84,10 +84,6 @@ ul{
 
 /*END MENU*/
 
-#about--me{
-    margin-top: 400px;
-}
-
 .start-page_content{
     margin-top: 100px;
     display: flex;
@@ -141,7 +137,7 @@ ul{
 }
 
 .container-about-me{
-    margin-top: 500px;
+    margin-top: 100px;
 }
 
 .section-about-me{
@@ -205,7 +201,7 @@ ul{
 }
 
 .my_projects{
-    margin-top: 1000px;
+    margin-top: 250px;
     text-align: center;
 }
 
